@@ -29,3 +29,4 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - run: node sendNotifications.js ${{secrets.BLOGSAW_LOGIN_ID}} ${{secrets.BLOGSAW_PWD}}

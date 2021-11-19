@@ -2,6 +2,7 @@ const express = require("express");
 const app= express();
 
 app.get("/",(req,res)=>{
+    console.log("a test statement too");
     res.send("Hello world from vaibhav");
 })
 

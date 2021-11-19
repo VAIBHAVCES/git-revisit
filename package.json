@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha ./test/* --exit",
-    "start":"node index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/VAIBHAVCES/git-revisit#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "nodemailer": "^6.7.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "mocha": "^9.1.3",

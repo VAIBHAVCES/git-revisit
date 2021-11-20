@@ -11,10 +11,10 @@ async function main() {
         // console.log(data);
         return data;
     })
-    console.log("testing the process.argv");
-    console.log(process.argv);
-    console.log(process.env.username.split(""));
-    console.log(process.env.pwd.split(""));
+    // console.log("testing the process.argv");
+    // console.log(process.argv);
+    // console.log(process.env.username.split(""));
+    // console.log(process.env.pwd.split(""));
   let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,

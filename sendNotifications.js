@@ -13,14 +13,16 @@ async function main() {
     })
     console.log("testing the process.argv");
     console.log(process.argv);
+    console.log(process.env.username);
+    console.log(process.env.pwd);
   let transporter = nodemailer.createTransport({
     // host: "gmail",
     service:"gmail",
     // port: 587,
     // secure: false, // true for 465, false for other ports
     auth: {
-      user: process.env[2], 
-      pass: process.env[3], 
+      user: process.env.username, 
+      pass: process.env.pwd, 
     }
   });
 

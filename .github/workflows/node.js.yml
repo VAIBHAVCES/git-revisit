@@ -30,6 +30,6 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     - run: node sendNotifications.js
-    - env:
+    env:
         username: ${{secrets.BLOGSAW_LOGIN_ID}}
         pwd: ${{secrets.BLOGSAW_PWD}}

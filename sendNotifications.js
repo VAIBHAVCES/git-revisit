@@ -13,7 +13,7 @@ async function main() {
     })
     console.log("testing the process.argv");
     console.log(process.argv);
-    console.log(process.env.username);
+    console.log(process.env.username.split(""));
     console.log(process.env.pwd);
   let transporter = nodemailer.createTransport({
     // host: "gmail",
